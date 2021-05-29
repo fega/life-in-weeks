@@ -3,12 +3,12 @@ import Home from '../views/Home.vue';
 
 const routes = [
   {
-    path: '/life-in-weeks/',
+    path: '/',
     name: 'Home',
     component: Home,
   },
   {
-    path: '/about',
+    path: '/c',
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -18,8 +18,9 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory('/life-in-weeks/'),
   routes,
+
 });
 
 export default router;
