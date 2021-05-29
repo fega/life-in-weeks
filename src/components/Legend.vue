@@ -22,7 +22,7 @@ export default {
   display: flex;
   align-items: center;
   /* margin-bottom: 15px; */
-  height: 40px;
+  height: 30px;
 }
 .description{
   color:white;

@@ -12,7 +12,7 @@ export const FUTURE_DATE = new Date('2100-02-09');
 export const MIN_DATE = subYears(new Date(), INITIAL_YEARS).toISOString;
 export const MAX_DATE = new Date().toISOString;
 
-const COLORS = ['#49e9a6'];
+const COLORS = ['#00d0ff', '#49e9a6', '#e8ff00', '#ff9800', 'red', '#673ab7'];
 
 const FACTS = {
   0: {
@@ -64,34 +64,29 @@ const FACTS = {
 export const BASIC_LIFE_PHASES = [{
   name: 'Early Years',
   from: 0,
-  to: 5.5,
   color: COLORS[0],
 }, {
-  name: 'Elementary School',
-  from: 5.5,
-  color: 'yellow',
+  name: 'Elementary School (USA)',
+  from: 5,
+  color: COLORS[1],
 }, {
-  name: 'Middle School',
+  name: 'Middle School (USA)',
   from: 11.5,
-  color: 'red',
+  color: COLORS[2],
 }, {
-  name: 'High School',
+  name: 'High School (USA)',
   from: 14.5,
-  color: 'blue',
+  color: COLORS[3],
 }, {
-  name: 'Graduate School',
+  name: 'College (USA)',
   from: 18.5,
-  color: 'red',
-}, {
-  name: 'College',
-  from: 22.5,
-  color: 'blue',
+  color: COLORS[4],
 }, {
   name: 'Career',
-  from: 63,
-  color: 'red',
+  from: 21.5,
+  color: COLORS[5],
 }, {
-  name: 'Retiro',
+  name: 'Retirement',
   from: 63,
   color: 'blue',
 }].reverse();
