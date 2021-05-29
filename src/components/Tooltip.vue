@@ -28,6 +28,7 @@ export default {
   box-shadow: black 0px 2px;
   text-shadow: black 0px 2px;
   min-width: max-content;
+  opacity: 0.8;
 }
 .tooltip:before{
   border: solid;
