@@ -2,6 +2,16 @@
   <div class="home">
     <div class="home-headers">
     <h1>Your Life in weeks</h1>
+    <p>
+        Hello, this is life in weeks,Here you can set your birth date and see where you are in your life (more or less).
+    </p>
+    <blockquote>
+      "It kind of feels like our lives are made up of a countless number of weeks. But there they are—fully countable—staring you in the face."
+    </blockquote>
+    <figcaption>
+    — Tim Urban
+    </figcaption>
+    <br>
     <div class="date-container">
       <label class="date-label" for="date">
         Your BirthDate:
@@ -31,7 +41,13 @@
         :birthDate="birthDate"
         />
     </div>
+    <h2>Inspired by:</h2>
+    <ul id="inspired-by">
+      <li><a href="https://www.youtube.com/watch?v=JXeJANDKwDc">Kurzgesagt</a> </li>
+      <li><a href="https://waitbutwhy.com/2014/05/life-weeks.html">Wait but why</a> </li>
+    </ul>
   </div>
+  
 </template>
 
 <script>
@@ -80,6 +96,7 @@ export default {
 .home{
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 h1{
@@ -124,5 +141,15 @@ h2{
   min-width: max-content;
   border: none;
   margin: 0px 10px
+}
+#inspired-by{
+  width: max-content;
+  margin: auto;
+}
+a:link {
+  color: aqua;
+}
+a:visited {
+  color: darkviolet;
 }
 </style>
