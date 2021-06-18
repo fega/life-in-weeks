@@ -4,6 +4,10 @@
     <!-- <router-link to="/about">About</router-link> -->
   </div>
   <router-view/>
+  <iframe style="width: 100%;
+  height: 450px;
+  border: none;
+  margin-top: 100px;" id="sengrid-iframe" src="https://cdn.forms-content.sg-form.com/3fd93a63-d079-11eb-8b02-ae3c4237bfe5"/>
 </template>
 
 <style lang="scss">
@@ -32,5 +36,6 @@ body{
       color: #42b983;
     }
   }
+ 
 }
 </style>
